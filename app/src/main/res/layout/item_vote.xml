@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewVoteTitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="10sp"
+            android:text="Titre" />
+        <TextView
+            android:id="@+id/textViewItemVoteDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="10sp"
+            android:text="Date" />
+        <TextView
+            android:id="@+id/textViewItemVotePosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="10sp"
+            android:text="Position" />
+        <TextView
+            android:id="@+id/textViewVoteResultat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="10sp"
+            android:text="Resultat Final" />
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/imageViewVoteposition"/>
+    </LinearLayout>
+</LinearLayout>

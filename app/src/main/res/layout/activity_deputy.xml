@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bleu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageViewDeputy"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDeputyName"
+                android:layout_width="match_parent"
+                android:textSize="28dp"
+                android:layout_height="wrap_content"
+                android:text="Prénom Nom" />
+
+            <TextView
+                android:id="@+id/textViewDeputyCirco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Dept, Circonscription" />
+            <TextView
+                android:id="@+id/textViewDeputyGroupe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Groupe" />
+            <TextView
+                android:id="@+id/textViewDeputyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email@toto.fr" />
+            <TextView
+                android:id="@+id/textViewDeputymandat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="debut mandat:" />
+            <TextView
+                android:id="@+id/textViewpartifinancier"
+                android:layout_width="match_parent"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="parti financier" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_margin="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collaborateurs"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10sp"
+        android:textStyle="bold"/>
+    <ListView
+        android:id="@+id/listViewCollaborator"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginHorizontal="14sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginBottom="14sp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_collaborator" />
+    <TextView
+        android:layout_margin="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votes"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10sp"
+        android:textStyle="bold"/>
+    <ListView
+        android:id="@+id/listViewVote"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginHorizontal="14sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginBottom="14sp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_vote" />
+</LinearLayout>
